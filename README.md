@@ -2,7 +2,7 @@
 - 👀 I’m interested in becoming a skilled software developer, with a focus on C/C++, Python, Java, and mastering Data Structures and Algorithms (DSA).
 - 🌱 I’m currently learning advanced concepts in DSA and exploring projects to deepen my understanding.
 - 💞️ I’m looking to collaborate on open-source projects, especially those involving Java and Python, and projects related to algorithms and problem-solving.
-- 📫 How to reach me: yesebumylapalli08@gmail.com
+- 📫 How to reach me: [Gmail](yesebumylapalli08@gmail.com)
 - 😄 Pronouns: He/Him
 - ⚡ Professional insight: I believe in the power of consistent learning and self-improvement as the key to mastering software development.
 - Profiles:
