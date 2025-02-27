@@ -5,6 +5,3 @@
 - 📫 How to reach me: [Gmail](yesebumylapalli08@gmail.com)
 - 😄 Pronouns: He/Him
 - ⚡ Professional insight: I believe in the power of consistent learning and self-improvement as the key to mastering software development.
-- Profiles:
-  - [LeetCode](https://leetcode.com/u/_Code_Seeker_/)
-  - [HackerEarth](https://www.hackerearth.com/@_Mylapalli_Yesebu_/)  
