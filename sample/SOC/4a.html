@@ -1,0 +1,48 @@
+<! -- movie_booking.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Ticket Booking</title>
+</head>
+<body>
+    <h1>Movie Ticket Booking</h1>    
+
+    <form>
+        <label for="numOfSeats">Number of Seats:</label> 
+        <input type="number" id="numOfSeats" name="numOfSeats" min="1" max="5"><br><br> 
+
+        <button type="button" onclick="calculatePrice()">Calculate Price</button><br><br> 
+
+        <label for="totalPrice">Total Price:</label> 
+        <input type="text" id="totalPrice" name="totalPrice" readonly><br><br> 
+    </form>
+
+    <script>
+        function calculatePrice() {
+            const costPerTicket = 150;
+            let numOfSeats = parseInt(document.getElementById("numOfSeats").value);
+            let totalPrice = 0;
+
+            if (isNaN(numOfSeats)) {
+                alert("Please enter a valid number of seats.");
+                return;
+            }
+
+            if (numOfSeats <= 2) {
+                totalPrice = calculateCost(numOfSeats, costPerTicket);
+            } else if (numOfSeats > 5) {
+                alert("Sorry, booking is not allowed for more than 5 seats.");
+                return;
+            } else {
+                totalPrice = calculateCost(numOfSeats, costPerTicket) * 0.9; // 10% discount
+            }
+
+            document.getElementById("totalPrice").value = totalPrice.toFixed(2);
+        }
+
+        function calculateCost(numOfSeats, costPerTicket) {
+            return numOfSeats * costPerTicket;
+        }
+    </script>
+</body>
+</html>
