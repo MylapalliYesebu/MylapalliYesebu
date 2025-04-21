@@ -1,7 +1,9 @@
 Experiment – 4a 
-AIM: Write a JavaScript code to book movie tickets online and calculate the total price 
-based on the 3 conditions: (a) If seats to be booked are not more than 2, the cost per 
-ticket remains Rs. 150. (b) If seats are 6 or more, booking is not allowed. 
+AIM: a) Write a JavaScript code to book movie tickets online and calculate the 
+total price based on the 3 conditions: (a) If seats to be booked are not more 
+than 2, the cost per ticket remains Rs. 150. (b) If seats are 6 or more, booking 
+is not allowed. (c) If  
+
 DESCRIPTION: Functions are reusable blocks of code that perform a specific task. In 
 JavaScript, there are several types of functions, including: 
 Named Functions: These functions are defined using the function keyword, followed by the 
@@ -22,12 +24,14 @@ scope, and can be accessed anywhere in the code.
 To declare a function in JavaScript, use the function keyword, followed by the function 
 name, and a pair of parentheses. The code inside the function is enclosed in curly braces. To 
 invoke the function, simply call its name, optionally passing in any required parameters. 
+
 PROGRAM: 
 
 4.b 
 AIM: Create an Employee class extending from a base class Person. Hints: (i) Create a 
 class Person with name and age as attributes. (ii) Add a constructor to initialize the 
 values (iii) Create a class Employee extending Person with additional attributes role 
+
 DESCRIPTION: Working with classes in JavaScript involves creating and using objects 
 that have a defined set of properties and behaviors. Classes are used to define the structure 
 and behavior of objects, and can be created and instantiated using the class keyword. Classes 
@@ -38,4 +42,5 @@ used, followed by the name of the class and a set of curly braces. Properties an
 defined within the class using constructor functions and prototype methods. To inherit from a 
 class, the extends keyword is used to specify the class being inherited from. Inherited 
 properties and methods can be accessed using the super keyword 
+
 PROGRAM: 
