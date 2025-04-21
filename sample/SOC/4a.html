@@ -5,44 +5,61 @@
     <title>Movie Ticket Booking</title>
 </head>
 <body>
-    <h1>Movie Ticket Booking</h1>    
 
+    <h2>Movie Ticket Booking</h2>
+
+    <!-- Input form for seat booking -->
     <form>
-        <label for="numOfSeats">Number of Seats:</label> 
-        <input type="number" id="numOfSeats" name="numOfSeats" min="1" max="5"><br><br> 
+        <!-- Input for number of seats -->
+        <label for="numOfSeats">Number of Seats:</label>
+        <input type="number" id="numOfSeats" name="numOfSeats" min="1" max="10"><br><br>
 
-        <button type="button" onclick="calculatePrice()">Calculate Price</button><br><br> 
+        <!-- Button to trigger price calculation -->
+        <button type="button" onclick="calculatePrice()">Calculate Price</button><br><br>
 
-        <label for="totalPrice">Total Price:</label> 
-        <input type="text" id="totalPrice" name="totalPrice" readonly><br><br> 
+        <!-- Output for total price -->
+        <label for="totalPrice">Total Price:</label>
+        <input type="text" id="totalPrice" name="totalPrice" readonly><br><br>
     </form>
 
     <script>
+        // Function to calculate total price
         function calculatePrice() {
             const costPerTicket = 150;
+
+            // Get number of seats entered by user
             let numOfSeats = parseInt(document.getElementById("numOfSeats").value);
             let totalPrice = 0;
 
-            if (isNaN(numOfSeats)) {
+            // Validate input
+            if (isNaN(numOfSeats) || numOfSeats < 1) {
                 alert("Please enter a valid number of seats.");
                 return;
             }
 
+            // (a) If 1 or 2 seats: normal price
             if (numOfSeats <= 2) {
                 totalPrice = calculateCost(numOfSeats, costPerTicket);
-            } else if (numOfSeats > 5) {
-                alert("Sorry, booking is not allowed for more than 5 seats.");
+            }
+            // (b) If 6 or more seats: booking not allowed
+            else if (numOfSeats >= 6) {
+                alert("Booking not allowed for 6 or more seats.");
                 return;
-            } else {
-                totalPrice = calculateCost(numOfSeats, costPerTicket) * 0.9; // 10% discount
+            }
+            // (c) If seats are 3 to 5: apply 10% discount
+            else {
+                totalPrice = calculateCost(numOfSeats, costPerTicket) * 0.9; // 10% off
             }
 
-            document.getElementById("totalPrice").value = totalPrice.toFixed(2);
+            // Display total price with 2 decimal points
+            document.getElementById("totalPrice").value = `₹${totalPrice.toFixed(2)}`;
         }
 
+        // Helper function to calculate cost
         function calculateCost(numOfSeats, costPerTicket) {
             return numOfSeats * costPerTicket;
         }
     </script>
+
 </body>
 </html>
