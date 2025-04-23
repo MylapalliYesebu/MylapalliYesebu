@@ -1,4 +1,0 @@
-t1=in1+in2
-t2=t1+in3
-t3=t2-in4
-out=t3
