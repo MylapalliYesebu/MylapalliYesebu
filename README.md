@@ -1,4 +1,4 @@
-# 👋 Hi, I’m MylapalliYesebu
+# 👋 Hi, I’m Yesebu
 
 - 👀 I’m interested in becoming a skilled software developer, focusing on C/C++, Python, Java, and mastering Data Structures and Algorithms (DSA).
 - 🌱 I’m learning advanced concepts in DSA and exploring projects to deepen my understanding.
