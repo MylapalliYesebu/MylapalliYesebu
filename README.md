@@ -6,4 +6,4 @@
 - 📫 How to reach me: Email [yesebumylapalli08@gmail.com](mailto:yesebumylapalli08@gmail.com)
 - 😄 Pronouns: He/Him
 - ⚡ Professional insight: I believe in consistent learning and self-improvement as the key to mastering software development.
-- link: https://chatgpt.com/share/68b5c5c6-eb68-800f-b2eb-a0c2239edd7e
+- 
